@@ -18,16 +18,16 @@
         <img src="img/logo.svg" alt="Logo">
         <nav clas="navigation">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+                <li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
             </ul>
 
         </nav>
     </div>
     <!-- ./navbar -->
-    <header class="header container">
+    <header class="header container" id="main">
         <img src="img/ava.png" alt="Front end" class="header-photo">
         <div class="header-text">
             <strong class="header-strong">Привет 👋</strong>
@@ -59,7 +59,7 @@
     </header>
     <!-- /.header -->
 
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
         <div class="container">
             <h2 class="section-heading">Последние проекты</h2>
             <div class="cards">
@@ -119,7 +119,7 @@
             <!-- /.cadrs -->
     </section>
     <!-- /.portfolio -->
-    <section class="developer container">
+    <section class="developer container" id="developer">
         <img src="img/photo.jpg" alt="Виолетта" class="developer-photo">
         <div class="developer-about">
             <span class="developer-hello">Рада вас видеть</span>
@@ -148,35 +148,43 @@
 
     </section>
     <!-- /.skills -->
-    <section class="feedback form-container">
-        <h2 class="feedback-title">Готова обсудить проект...</h2>
-        <form action="#" class="form">
-            <div class="input-group">
-                <label for="userName" class="input-label">Имя</label>
-                <input type="text" class="input" id="userName">
-            </div>
-            <!-- /.input-group -->
-            <div class="input-group">
-                <label for="userEmail" class="input-label">Email</label>
-                <input type="text" class="input" id="userEmail">
-            </div>
-            <!-- /.input-group -->
-            <div class="input-group">
-                <label for="userMes" class="input-label">Сообщение</label>
-                <textarea cols="30" rows="10" class="input textarea" id="userMes"></textarea>
+    <section class="feedback" id="feedback">
+        <img src="img/Icons/hand.png" alt="hand" class="feedback-hand">
+        <div class="form-container">
+            <h2 class="feedback-title">Готова обсудить проект...</h2>
+            <form action="#" class="form">
+                <div class="input-group">
+                    <label for="userName" class="input-label">Имя</label>
+                    <input type="text" class="input" id="userName">
+                </div>
+                <!-- /.input-group -->
+                <div class="input-group">
+                    <label for="userEmail" class="input-label">Email</label>
+                    <input type="text" class="input" id="userEmail">
+                </div>
+                <!-- /.input-group -->
+                <div class="input-group">
+                    <label for="userMes" class="input-label">Сообщение</label>
+                    <textarea cols="30" rows="10" class="input textarea" id="userMes"></textarea>
 
-            </div>
-            <div class="button-group">
-                <button type="submit" class="cv-download">
-                    <img src="img/Icons/submit.svg" alt="cv-download" class="cv-icon">
-                    <span class="cv-text">Отправить</span>
-                </button>
-            </div>
-            <!-- /.button-group -->
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="cv-download">
+                        <img src="img/Icons/submit.svg" alt="cv-download" class="cv-icon">
+                        <span class="cv-text">Отправить</span>
+                    </button>
+                </div>
+                <!-- /.button-group -->
 
-        </form>
+            </form>
+        </div>
+        <!-- /.form-container -->
+
     </section>
     <!-- /.feedback -->
+    <footer>
+        <p>Сделано с ❤️ в Украине</p>
+    </footer>
 </body>
 
 </html>
